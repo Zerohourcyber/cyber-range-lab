@@ -12,7 +12,6 @@ This is a home-based cyber range designed for hands-on Red Team and Blue Team tr
 - Windows Server (AD Domain Controller)
 - Ubuntu ELK Stack
 
-
 ![WIP](https://img.shields.io/badge/status-WIP-yellow)
 ![MIT License](https://img.shields.io/github/license/Zerohourcyber/cyber-range-lab)
 ![Tools Used](https://img.shields.io/badge/tools-Kali%20%7C%20pfSense%20%7C%20ELK%20%7C%20Velociraptor-blue)
