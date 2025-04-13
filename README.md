@@ -1,8 +1,13 @@
-<<<<<<< HEAD
-# README.md
+# Cyber Range Lab – Nicholas Vidal
 
-> This is a placeholder for README.md
-=======
-# cyber-range-lab
-My personal DFIR and Red/Blue Team cyber range, built with Proxmox and real hardware
->>>>>>> eeabd6091d9bbb6dff1c63c7db9b5fa21f700cb0
+> ⚠️ This project is a work in progress (WIP). Updates are ongoing as I build out my lab infrastructure.
+
+This is a home-based cyber range designed for hands-on Red Team and Blue Team training using real hardware, virtual machines, and Active Directory simulations.
+
+## 🧱 Core Infrastructure
+- Proxmox host
+- Red Team laptop (Kali)
+- Blue Team laptop (Windows 10 w/ Sysmon, Velociraptor)
+- pfSense VM for segmentation
+- Windows Server (AD Domain Controller)
+- Ubuntu ELK Stack
