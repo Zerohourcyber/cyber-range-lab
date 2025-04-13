@@ -13,7 +13,9 @@ This is a home-based cyber range designed for hands-on Red Team and Blue Team tr
 
 ### 📌 Project Roadmap  
 - [View High-Level Roadmap](docs/roadmap.md)  
-- [Phase 1: Infrastructure Setup](docs/phase_1.md)
+- [Phase 1: Infrastructure Setup](docs/phase_1_infrastructure.md)  
+- [Phase 2: Red & Blue Team Integration](docs/phase_2_redblue.md)
+
 
 ---
 
