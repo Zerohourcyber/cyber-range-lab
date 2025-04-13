@@ -37,6 +37,5 @@ This is a home-based cyber range designed for hands-on Red Team and Blue Team tr
 ---
 
 ![status](https://img.shields.io/badge/status-WIP-yellow)
-![license](https://img.shields.io/github/license/Zerohourcyber/cyber-range-lab)
+![license](https://img.shields.io/badge/license-MIT-green)
 ![tools](https://img.shields.io/badge/tools-Kali%20%7C%20pfSense%20%7C%20ELK%20%7C%20Velociraptor-blue)
-
