@@ -4,6 +4,18 @@
 
 This is a home-based cyber range designed for hands-on Red Team and Blue Team training using real hardware, virtual machines, and Active Directory simulations.
 
+> 📓 [View Lab Journal](docs/lab_journal.md)
+
+### 🔧 Current TODOs
+
+- [x] Make repo public
+- [x] Fix license badge
+- [x] Upload README
+- [ ] Upload Kali ISO to Proxmox
+- [ ] Build pfSense bridge
+- [ ] Write Kali VM build script
+
+
 ## 🧱 Core Infrastructure
 - Proxmox host
 - Red Team laptop (Kali)
