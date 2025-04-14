@@ -1,3 +1,10 @@
+<p align="center">
+  <img src="assets/nicholasvidaltech_logo.png" alt="nicholasvidal.tech logo" width="400"/>
+</p>
+
+<h1 align="center">Cyber Range Lab – Nicholas Vidal</h1>
+<p align="center"><strong>I build it. I break it. I defend it.</strong></p>
+
 # Cyber Range Lab – Nicholas Vidal
 
 > ⚠️ **This project is a work in progress (WIP).**  
