@@ -5,73 +5,65 @@
     <meta charset="UTF-8">
     <title>Nicholas Vidal's Cyber Range Lab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #0f1117; color: #f0f0f0; }
-        header { background: #1f222a; padding: 20px; text-align: center; }
-        h1 { margin: 0; font-size: 26px; }
-        .badges { margin-top: 10px; font-size: 14px; }
-        main { padding: 30px; max-width: 900px; margin: auto; }
-        section { margin-bottom: 40px; }
-        h2 { border-bottom: 2px solid #444; padding-bottom: 8px; }
-        ul { list-style: none; padding: 0; }
-        ul li { margin-bottom: 8px; }
-        .btn { display: inline-block; margin: 10px 10px 0 0; padding: 10px 16px; background: #2d87f0; color: #fff; text-decoration: none; border-radius: 5px; }
-        footer { background: #1f222a; padding: 20px; text-align: center; font-size: 14px; margin-top: 40px; }
-        .phase-complete { color: #5fd28b; }
-        .phase-incomplete { color: #f9cb40; }
+        body { background-color: #0e1117; color: #e4e4e4; }
+        .hero { padding: 60px 20px; background: linear-gradient(145deg, #1f232e, #161a22); text-align: center; }
+        .hero h1 { font-size: 2.5rem; color: #66d9ef; }
+        .hero p { font-size: 1.2rem; color: #bfbfbf; }
+        .section-title { border-bottom: 2px solid #333; padding-bottom: 10px; margin-top: 50px; color: #66d9ef; }
+        .btn-custom { background-color: #2d87f0; color: white; }
+        .phase-complete { color: #28a745; }
+        .phase-incomplete { color: #ffc107; }
+        footer { padding: 20px; text-align: center; font-size: 0.9rem; margin-top: 60px; background: #1f232e; color: #888; }
+        .tool-icon { font-size: 1.5rem; margin-right: 10px; }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Nicholas Vidal's Cyber Range Lab</h1>
-        <div class="badges">
-            Status: <span class="phase-incomplete">Work in Progress</span> |
-            Tools: Kali, pfSense, ELK, Velociraptor
-        </div>
-    </header>
-    <main>
-        <section>
-            <h2>Overview</h2>
-            <p>
-                This lab simulates real-world red/blue team operations, Active Directory attacks,
-                and DFIR investigations. It's built on Proxmox virtualization and supported by open-source tooling.
-            </p>
-            <a href="docs/roadmap.md" class="btn">View the Roadmap</a>
-            <a href="docs/lab_journal.md" class="btn">Open Lab Journal</a>
-            <a href="docs/dashboard.md" class="btn">Project Dashboard</a>
-        </section>
-        <section>
-            <h2>Project Phases</h2>
-            <ul>
-                <li><span class="phase-complete">✔ Phase 1:</span> Infrastructure Setup</li>
-                <li><span class="phase-complete">✔ Phase 2:</span> Red/Blue Team Integration</li>
-                <li><span class="phase-complete">✔ Phase 3:</span> AD Simulation & Threats</li>
-                <li><span class="phase-incomplete">⏳ Phase 4:</span> DFIR & Memory Forensics</li>
-                <li><span class="phase-incomplete">⏳ Phase 5:</span> Capstone & Portfolio</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Tools In Use</h2>
-            <ul>
-                <li>Kali Linux (BloodHound, Mimikatz, Impacket)</li>
-                <li>pfSense (Segmentation, Firewall)</li>
-                <li>Windows 10 w/ Sysmon + Winlogbeat</li>
-                <li>Velociraptor (EDR)</li>
-                <li>ELK Stack (Elastic, Logstash, Kibana)</li>
-                <li>Volatility3 (Memory Forensics)</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Recent Walkthroughs</h2>
-            <ul>
-                <li>Kerberoasting with Rubeus (Apr 2025)</li>
-                <li>LSASS Memory Analysis with Volatility (Mar 2025)</li>
-                <li>Detecting SharpHound in ELK (Feb 2025)</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        © 2025 Nicholas Vidal | <a href="https://nicholasvidal.tech" style="color:#61dafb;">nicholasvidal.tech</a>
-    </footer>
+
+<div class="hero">
+    <h1><i class="fas fa-terminal"></i> Nicholas Vidal's Cyber Range Lab</h1>
+    <p>Red & Blue Team Simulations • Active Directory Attacks • DFIR & Forensics</p>
+    <div class="mt-4">
+        <a href="docs/roadmap.md" class="btn btn-custom me-2"><i class="fas fa-map"></i> Roadmap</a>
+        <a href="docs/lab_journal.md" class="btn btn-custom me-2"><i class="fas fa-book"></i> Lab Journal</a>
+        <a href="docs/dashboard.md" class="btn btn-custom"><i class="fas fa-chart-line"></i> Dashboard</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <h2 class="section-title mt-5">Project Phases</h2>
+    <ul class="list-group">
+        <li class="list-group-item bg-dark text-light"><span class="phase-complete">✔ Phase 1:</span> Infrastructure Setup</li>
+        <li class="list-group-item bg-dark text-light"><span class="phase-complete">✔ Phase 2:</span> Red/Blue Team Integration</li>
+        <li class="list-group-item bg-dark text-light"><span class="phase-complete">✔ Phase 3:</span> AD Simulation & Threats</li>
+        <li class="list-group-item bg-dark text-light"><span class="phase-incomplete">⏳ Phase 4:</span> DFIR & Memory Forensics</li>
+        <li class="list-group-item bg-dark text-light"><span class="phase-incomplete">⏳ Phase 5:</span> Capstone & Portfolio</li>
+    </ul>
+
+    <h2 class="section-title">Tool Stack</h2>
+    <div class="row text-center">
+        <div class="col"><i class="fab fa-linux tool-icon"></i> Kali Linux</div>
+        <div class="col"><i class="fas fa-network-wired tool-icon"></i> pfSense</div>
+        <div class="col"><i class="fas fa-eye tool-icon"></i> Velociraptor</div>
+        <div class="col"><i class="fas fa-database tool-icon"></i> ELK Stack</div>
+        <div class="col"><i class="fas fa-skull-crossbones tool-icon"></i> BloodHound</div>
+    </div>
+
+    <h2 class="section-title">Recent Walkthroughs</h2>
+    <ul class="list-group">
+        <li class="list-group-item bg-dark text-light">Kerberoasting with Rubeus <span class="text-muted">(Apr 2025)</span></li>
+        <li class="list-group-item bg-dark text-light">LSASS Memory Analysis with Volatility <span class="text-muted">(Mar 2025)</span></li>
+        <li class="list-group-item bg-dark text-light">Detecting SharpHound in ELK <span class="text-muted">(Feb 2025)</span></li>
+    </ul>
+
+</div>
+
+<footer>
+    © 2025 Nicholas Vidal | <a href="https://nicholasvidal.tech" class="text-decoration-none text-info">nicholasvidal.tech</a>
+</footer>
+
 </body>
 </html>
