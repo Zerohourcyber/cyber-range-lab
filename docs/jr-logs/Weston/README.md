@@ -1,5 +1,4 @@
-# Jr. Engineer Logbook – [Your Name Here]
-
+# Jr. Engineer Logbook – Weston Vidal
 Welcome to your personal mission log inside the nicholasvidal.tech cyber range.
 
 Track your daily tasks, milestones, and cool things you build or break.
