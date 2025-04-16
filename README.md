@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/IMG_9563.png" alt="IMG_9563.png" width="400"/>
+  <img src="docs/IMG_9563.png" alt="IMG_9563.png" width="400"/>
 </p>
 
 <h1 align="center">Cyber Range Lab – Nicholas Vidal</h1>
