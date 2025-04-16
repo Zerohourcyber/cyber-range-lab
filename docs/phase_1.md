@@ -1,39 +1,48 @@
+# 🚀 Phase 1: Cyber Range Initialization
 
-# Phase 1 – Core Infrastructure Setup
-
-## Goal:
-Prepare a fully functional cyber range foundation, including virtualization, switching, ISOs, storage, and VM templates.
+This phase focuses on preparing the cyber range infrastructure, including Proxmox setup, admin system configuration, and core ISO provisioning.
 
 ---
 
-### 🖥️ Proxmox Host
-- [x] Install Proxmox VE on primary laptop
-- [ ] Add secondary USB-C Ethernet adapter
-- [ ] Install 1TB SSD and create VM storage pool
-- [ ] Upload base ISOs (Kali, Windows 10, Ubuntu, pfSense)
-
-### 🌐 Network Architecture
-- [x] Setup Netgear 8-port switch
-- [x] Confirm Proxmox <-> switch <-> Red/Blue connectivity
-- [ ] Design logical VLAN layout for RedNet, BlueNet, MgmtNet
-- [ ] Deploy pfSense VM and define basic firewall rules
-
-### 🧱 Virtual Machines
-- [ ] Create base Kali Linux VM template
-- [ ] Create Windows 10 VM image (Blue Team use)
-- [ ] Create Ubuntu ELK stack VM
-- [ ] Build and configure pfSense VM
-
-### ⚙️ Additional Tasks
-- [x] Set up GitHub repo with structure
-- [x] Create `lab_journal.md`
-- [x] Create `dashboard.md`
-- [ ] Link Proxmox UI access via Blue Team laptop
-- [ ] Verify console access to all VMs
+## 🧱 Objectives
+- Install and configure Proxmox on dedicated hardware
+- Create an Admin Console with isolated access
+- Stage and upload all core ISO images to Proxmox
+- Validate first VM deployments
+- Prepare documentation and logs for contributors
 
 ---
 
-### ✅ Phase Completion Criteria
-- All VMs deployed and reachable
-- pfSense segments traffic logically
-- All tools, ISOs, and networks functioning for Red/Blue simulation
+## 📦 Key Tasks
+
+| Task | Owner | Status |
+|------|-------|--------|
+| Download and verify all ISOs | Jr. Engineer | ☐ |
+| Upload ISOs to Proxmox | Jr. Engineer | ☐ |
+| Create Admin Console user | Mission Lead | ✅ |
+| Lock down Nyx access | Mission Lead | ✅ |
+| Build and boot first VMs (Kali, Ubuntu) | Jr. Engineer | ☐ |
+| Take screenshots and log each build | Jr. Engineer | ☐ |
+
+---
+
+## 📂 Folder Structure Setup
+
+| Folder | Purpose |
+|--------|---------|
+| `/isos/` | Tracks ISO downloads and upload tasks |
+| `/jr-logs/` | Logs and documentation from Jr. Engineer |
+| `/phases/` | Stage-based documentation for cyber range |
+| `/docs/` | Planning documents, diagrams, onboarding |
+
+---
+
+## ✅ Completion Criteria
+- Proxmox successfully installed and online
+- At least 3 functional VMs created
+- Jr. Engineer has submitted at least 2 log entries
+- ISO README and tasks file completed in repo
+
+---
+
+> When Phase 1 is complete, move into Phase 2: Detection & Defense.
