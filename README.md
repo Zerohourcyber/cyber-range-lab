@@ -50,4 +50,30 @@ cd cyber-range-lab
 
 ---
 
+## Modern Cyber Range Lab Topology
+
+```mermaid
+graph LR
+    style OPN fill:#EEE,stroke:#333,stroke-width:2px
+    style SW  fill:#DDD,stroke:#333,stroke-width:2px
+    style Kali fill:#F28C8C,stroke:#333
+    style Met fill:#F28C8C,stroke:#333
+    style Docker fill:#89C2D9,stroke:#333
+    style Wazuh fill:#89C2D9,stroke:#333
+    style Nessus fill:#89C2D9,stroke:#333
+    style Pi   fill:#F4D35E,stroke:#333
+    style AD   fill:#8ACB88,stroke:#333
+    style Cal  fill:#8ACB88,stroke:#333
+
+    OPN[OPNsense VM (100)] --> SW[8-port Switch (VLAN)]  
+    SW  --> Kali[Kali Linux (101)]  
+    SW  --> Met[Metasploitable2 (300)]  
+    SW  --> Docker[prod-docker (102)]  
+    SW  --> Wazuh[prod-wazuh (105)]  
+    SW  --> Nessus[prod-nessus (106)]  
+    SW  --> Pi[Pi-hole + CasaOS (PI)]  
+    SW  --> AD[Win-AD DC (103)]  
+    SW  --> Cal[prod-caldera (104)]  
+
+
 © 2025 Nicholas Vidal
