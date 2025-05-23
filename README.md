@@ -50,12 +50,4 @@ cd cyber-range-lab
 
 ---
 
-## 📛 Badges
-
-![Status: WIP](https://img.shields.io/badge/status-WIP-yellow)  
-![License: MIT](https://img.shields.io/badge/license-MIT-green)  
-![Tools Used](https://img.shields.io/badge/tools-Kali%20%7C%20pfSense%20%7C%20ELK%20%7C%20Velociraptor-blue)
-
----
-
 © 2025 Nicholas Vidal
