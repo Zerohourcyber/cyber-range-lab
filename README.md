@@ -24,12 +24,14 @@ This is a hands-on Red Team and Blue Team cyber range built using real hardware,
 
 ## 🧱 Core Infrastructure
 
-- **Proxmox Host**
-- **Red Team Laptop** (Kali)
-- **Blue Team Laptop** (Windows 10 w/ Sysmon, Velociraptor)
-- **pfSense VM** for segmentation
-- **Windows Server** (AD Domain Controller)
-- **Ubuntu ELK Stack**
+- **bWAPP** (Docker) — vulnerable web app  
+- **Kali Linux** (Docker) — attacker toolkit  
+- **Wazuh** (Docker) — SIEM & EDR  
+- **Nessus** (VM) — external vulnerability scanner  
+- **OPNsense** (VM) — firewall & VLAN segmentation  
+- **Active Directory** (VM) — Windows DC environment  
+- **Pi-hole** (Docker) — DNS filtering & ad-blocking  
+- …and more (see each folder’s README)
 
 ---
 
@@ -39,15 +41,12 @@ Track all progress, updates, and reflections in the [Cyber Range Lab Journal](ht
 
 ---
 
-## 🔧 Current TODOs
+ Quickstart
 
-- [x] Make repo public  
-- [x] Fix license badge  
-- [x] Upload README  
-- [x] Create lab journal  
-- [ ] Upload ISOs (Kali, Windows, pfSense)  
-- [ ] Build VM setup scripts  
-- [ ] Setup virtual network bridge  
+```bash
+git clone https://github.com/Zerohourcyber/cyber-range-lab.git
+cd cyber-range-lab
+./setup.sh 
 
 ---
 
