@@ -48,7 +48,6 @@ git clone https://github.com/Zerohourcyber/cyber-range-lab.git
 cd cyber-range-lab
 ./setup.sh 
 
-![image](https://github.com/user-attachments/assets/19717fad-3f7c-4bb6-8b99-db399538d204)
 
 
 
